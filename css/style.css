@@ -96,7 +96,7 @@ a:hover {
     display: inline;
     max-height: inherit;
     max-width: 23%;
-    margin: 0 .1em 0 .1em;
+    margin: 0 .2em 0 .2em;
 }
 
 .section-2 {
@@ -236,6 +236,12 @@ video {
         display: block;
     }
 
+    .players img {
+        display: inline;
+        max-height: inherit;
+        max-width: 20%;
+        margin: 0 .1em 0 .1em;
+    }
     .section-2 {
         display: block;
     }
