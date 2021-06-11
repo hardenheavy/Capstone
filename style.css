@@ -1,0 +1,322 @@
+body {
+    background: #080808; 
+    margin: 0 .6em .5em .6em;
+    font-family: Montserrat;
+    font-size: 85%;
+}
+
+h1 {
+    display: none;
+}
+
+h2, p{
+    color: #dfdfdf;
+}
+
+h2 {
+    font-weight: 600;
+    line-height: .7;
+    margin-top: .25em;
+}
+
+p a {
+    color: rgb(24, 167, 250);
+    text-decoration: none;
+}
+
+h2 a {
+    color: rgb(24, 167, 250);
+    text-decoration: none;
+    font-size: 50%;
+}
+
+h2 a:hover {
+    text-decoration: underline;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+.toggle-nav {
+    display: none;
+}
+
+.navbar-container {
+    display: flex;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    z-index: 1;
+}
+
+.navbar {
+    flex: 1;
+    display: inline-block;
+    height: 3.5em;
+    padding: 1em 3em 0 0;
+    text-align: right;
+    font-size: 120%;
+    font-weight: 600;
+}
+
+.navbar-link {
+    text-align: right;
+    text-transform: lowercase;
+    text-decoration: none;
+    color: #A5A7A9;
+    padding: .5em;
+}
+
+a:hover {
+    color: rgb(24, 167, 250);
+}
+
+.banner img {
+    max-width: 100%;
+}
+
+.section-1 {
+    display: flex;
+    padding: .5em;
+}
+
+.intro-text {
+    flex: 1;
+    margin: 0 .3em 0 0;
+}
+
+.players {
+    flex: 1;
+    text-align: center;
+    margin: 0 0 0 0.3em;
+}
+
+.players img {
+    display: inline;
+    max-height: inherit;
+    max-width: 23%;
+    margin: 0 .2em 0 .2em;
+}
+
+.section-2 {
+    display: flex;
+    background-color: rgba(255, 255, 255, .15);
+    padding: .5em;
+    margin-top: 1em;
+}
+
+.el-guitar {
+    flex: 1;
+    margin: 0 .3em 0 0;
+}
+
+.el-guitar img {
+    width: 100%;
+}
+
+.el-guitar-2 {
+    display: none;
+}
+
+.guitar-text {
+    flex: 1;
+    margin: 0 0 0 .3em
+}
+
+.riffs {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    text-align: center;
+}
+
+.wrapper-2 {
+    display: flex;
+    text-align: center;
+}
+
+.video-thumbs {
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    max-width: 33%;
+    padding: 1em;
+}
+
+
+.video-thumbs img {
+    width: 100%;
+    height: auto;
+}
+
+.video-thumbs .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(196, 195, 195, 0.7);
+    color: rgb(0, 0, 0);
+    font-size: 200%;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+.video-thumbs .btn:hover {
+    background-color: rgba(255, 0, 0, 0.8);
+    color: rgb(255, 255, 255);
+    transition: .3s;
+}
+
+#container {
+    min-height: 100vh;
+    margin-bottom: .5em;
+    padding: .5em;
+}
+
+#container:after {
+    content: "";
+    display: block;
+    height: 7em;
+}
+
+.foot {
+background-color: rgba(255, 255, 255, .15);
+height: 7em;
+padding: .8em;
+line-height: .5;
+text-align: center;
+}
+
+.foot a {
+    color: rgb(24, 167, 250);
+    text-decoration: none;
+}
+
+.foot a:hover {
+    text-decoration: underline;
+}
+
+video {
+    max-width: 100%;
+}
+
+.modal-content {
+    border: none;
+}
+
+.banner-xs {
+    display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .banner-xs {
+        display: block;
+    }
+
+    .banner-l {
+        display: none;
+    }
+    .section-1 {
+        display: block;
+        padding: .5em;
+    }
+
+    .intro-text .players {
+        display: block;
+    }
+
+    .players img {
+        display: inline;
+        max-height: inherit;
+        max-width: 20%;
+        margin: 0 .1em 0 .1em;
+    }
+    .section-2 {
+        display: block;
+    }
+
+    .el-guitar {
+        margin-bottom: 1em;
+    }
+
+    .el-guitar-2 {
+        display: none;
+    }
+
+    .wrapper {
+        display: block;
+    }
+
+    .wrapper-2 {
+        display: block;
+    }
+
+    .video-thumbs {
+        display: block;
+        max-width: 80%;
+        margin-bottom: 1em;
+    }
+
+    .navbar-container{
+        display: none;
+    }
+
+    .toggle-nav {
+        display: block;
+        position: relative;
+        margin: .5em;
+        float: right;
+        z-index: 1000;
+    }
+
+    .nav-open .navbar-container {
+        display: block;
+        position: absolute;
+        padding-bottom: 2em;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 100%;
+    }
+
+    .navbar-link {
+        display: block;
+        text-align: left;
+        text-transform: uppercase;
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+
+    .section-1 {
+        display: block;
+        padding: .5em;
+    }
+
+    .section-2 {
+        display: block;
+    }
+
+    .el-guitar {
+        display: none;
+    }
+    
+    .el-guitar-2 {
+        display: block;
+    }
+
+    .el-guitar-2 img {
+        max-width: 100%;
+        margin-bottom: 1em;
+    }
+}
