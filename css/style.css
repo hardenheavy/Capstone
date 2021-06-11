@@ -95,7 +95,7 @@ a:hover {
 .players img {
     display: inline;
     max-height: inherit;
-    max-width: 21%;
+    max-width: 20%;
     margin: 0 .2em 0 .2em;
 }
 
