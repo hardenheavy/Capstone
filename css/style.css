@@ -192,7 +192,7 @@ a:hover {
 background-color: rgba(255, 255, 255, .15);
 height: 7em;
 padding: .8em;
-line-height: .5;
+line-height: 1;
 text-align: center;
 }
 
